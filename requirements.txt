@@ -1,0 +1,13 @@
+streamlit>=1.40
+opencv-python>=4.8
+numpy>=1.24
+Pillow>=10.0
+pandas>=2.0
+# Prebuilt dlib wheel (no C++ compiler / CMake needed). Do NOT list plain "dlib" here.
+dlib-bin>=19.24
+face_recognition_models>=0.3.0
+Click>=7.0
+setuptools<81
+# face_recognition itself is installed in a second step WITHOUT dependencies,
+# otherwise pip tries to compile dlib from source:
+#     pip install face_recognition --no-deps
